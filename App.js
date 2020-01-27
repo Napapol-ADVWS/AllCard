@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
-    View,
-    Text
+    View
 } from "react-native";
 import Login from './screens/login'
 import Register from './screens/Register'
