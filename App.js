@@ -27,7 +27,7 @@ export default class App extends Component{
     const{ 
       email="mydeverlop@advws.com",
       nameUser="มะลอง",
-      lastNameUser="ก๊อกแก๊ง"
+      lastNameUser="ก๊อกแก๊งงองแงง"
     } = this.props
     switch(this.state.page) {
         case 'Login':
