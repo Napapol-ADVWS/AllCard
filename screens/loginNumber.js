@@ -4,6 +4,7 @@ import {View,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import {LoginNum} from '../src/components/componentsLoginNumber/LoginNum_component' 
 var Next = "";
+var PhoneNumber ="";
 export default class LoginNumber extends Component {  
     Goto = () => {  
         var page = ""
@@ -14,11 +15,12 @@ export default class LoginNumber extends Component {
         }
         const {changePage}=this.props;
         this.changePage= changePage;
-        this.changePage(page);
+        this.changePage(page,PhoneNumber);
         Next=""
     }
-    Nextto = () =>{
+    Nextto = (TextInputValue) =>{
         Next = "Register"
+        PhoneNumber = TextInputValue
         this.Goto();
     }
     render() {

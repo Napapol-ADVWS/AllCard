@@ -10,9 +10,6 @@ class Regis extends React.Component {
     } 
     
     render() {
-        console.log(this.props.email)
-        console.log(this.props.nameUser)
-        console.log(this.props.lastnameUser)
         return (
             <TouchableWithoutFeedback onPress={()=>{Keyboard.dismiss();}}>
             <View style={{alignItems:'center',justifyContent:'center'}}>
@@ -42,6 +39,7 @@ class Regis extends React.Component {
                     <Text style={{ paddingRight: 8 }} />
                     <TextInput style={{width:230}}
                         placeholder="เบอร์โทรศัพท์"
+                        value={this.props.phonenumber}
                         keyboardType="numeric"
                     />
                 </View>

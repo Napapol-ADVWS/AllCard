@@ -6,7 +6,6 @@ var thisPage = ""
 export default class Login extends React.Component {
     Goto = () => {
         var page = thisPage
-        console.log("this Page : "+thisPage)
         const {changePage}=this.props;
         this.changePage= changePage;
         this.changePage(page);

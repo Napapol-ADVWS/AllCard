@@ -29,11 +29,9 @@ export default class Register extends Component {
         const{ 
             email=this.props.email,
             nameUser=this.props.nameUser,
-            lastNameUser=this.props.lastNameUser
+            lastNameUser=this.props.lastNameUser,
+            phonenumber=this.props.phonenumber
         } = this.props
-        console.log(this.props.email)
-        console.log(this.props.nameUser)
-        console.log(this.props.lastNameUser)
         return (
            <View>
                 <View
@@ -49,7 +47,7 @@ export default class Register extends Component {
                         <Icon name="chevron-left" color="#FFF" size={30} />
                     </TouchableOpacity>
                 </View>
-                <Regis Nextto={this.Nextto} email={email} nameUser={nameUser} lastNameUser={lastNameUser} />
+                <Regis Nextto={this.Nextto} email={email} nameUser={nameUser} lastNameUser={lastNameUser} phonenumber={phonenumber} />
             </View>
        
         )
